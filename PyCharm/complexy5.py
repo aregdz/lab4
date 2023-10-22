@@ -1,7 +1,6 @@
-h = int(input("Введите часы "))
-m = int(input("Введите минуты "))
-s = int(input("Введите секунды "))
-if h > 12:
-    h = h - 12
-riz = 360 * (h*3600 +m*60 +s) / (12*3600)
-print(riz)
+hours = int(input("Введите часы: "))
+minutes = int(input("Введите минуты: "))
+seconds = int(input("Введите секунды: "))
+total_seconds = hours * 3600 + minutes * 60 + seconds
+angle = (total_seconds / 86400) * 360
+print(angle)
